@@ -3,7 +3,6 @@ module alert-message-go
 go 1.19
 
 require (
-	github.com/TwiN/go-color v1.4.0
 	github.com/martinlindhe/notify v0.0.0-20181008203735-20632c9a275a
 )
 
