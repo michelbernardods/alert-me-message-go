@@ -36,5 +36,4 @@ func main() {
 
 	time.Sleep(time.Duration(setTimeDurationToAlert) * time.Minute)
 	notify.Alert(Time(), "ALERT!", "Reminder: "+message, "path/to/icon.png")
-	
 }
