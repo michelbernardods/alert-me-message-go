@@ -28,6 +28,6 @@ func main() {
 	fmt.Print("In how many minutes:: ")
 	fmt.Scan(&setTimeDurationToAlert)
 
-	time.Sleep(time.Duration(setTimeDurationToAlert) * time.Second)
+	time.Sleep(time.Duration(setTimeDurationToAlert) * time.Minute)
 	notify.Alert(Time(), "ALERT!", "Reminder: "+message, "path/to/icon.png")
 }
