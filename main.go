@@ -25,10 +25,8 @@ func main() {
 	var setTimeDurationToAlert int
 
 	fmt.Print("Notification message: ")
-	// fmt.Scan(&message)
 	scanner := bufio.NewScanner(os.Stdin)
 	for scanner.Scan() {
-		// fmt.Printf("You wrote \"%s\"\n", scanner.Text())
 		message = scanner.Text()
 		break
 	}
