@@ -1,4 +1,4 @@
-module alert-message-go
+module alert-me-message-go
 
 go 1.19
 
