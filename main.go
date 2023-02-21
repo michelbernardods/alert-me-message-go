@@ -7,6 +7,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/TwiN/go-color"
 	"github.com/martinlindhe/notify"
 )
 
@@ -21,6 +22,7 @@ func Time() string {
 }
 
 func main() {
+
 	var message string
 	var setTimeDurationToAlert int
 
@@ -34,6 +36,9 @@ func main() {
 	fmt.Print("In how many minutes: ")
 	fmt.Scan(&setTimeDurationToAlert)
 
-	time.Sleep(time.Duration(setTimeDurationToAlert) * time.Minute)
+	println("")
+	println(color.Green+"Wait... you will be notified in", setTimeDurationToAlert, "minutes")
+	time.Sleep(time.Duration(setTimeDurationToAlert) * time.Second)
+
 	notify.Alert(Time(), "ALERT!", "Reminder: "+message, "path/to/icon.png")
 }
